@@ -1,0 +1,23 @@
+1. States = rownames(US Arrests) 
+
+Get states names with ‘w’. 
+Answer:
+
+States = rownames(USArrests)
+States
+grep(pattern = “w”, States , value = TRUE)
+
+Get states names with ‘W’. 
+
+Answer:
+
+States = rownames(USArrests)
+States
+grep(pattern = 'W', States , value = TRUE)
+
+2. Prepare a Histogram of the number of characters in each US state. 
+
+Answer:
+library(ggplot2)
+hist(nchar(states), main = "Histogram",
+     xlab = "number of characters in US State names")
